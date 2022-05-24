@@ -13,8 +13,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// SRRunLoopThread 继承自 NSThread
 @interface SRRunLoopThread : NSThread
 
+// 线程对应的 RunLoop
 @property (nonatomic, strong, readonly) NSRunLoop *runLoop;
 
 + (instancetype)sharedThread;
