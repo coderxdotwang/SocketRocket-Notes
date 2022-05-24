@@ -21,6 +21,7 @@ void import_NSRunLoop_SRWebSocket() { }
 
 + (NSRunLoop *)SR_networkRunLoop
 {
+    // 返回 SRRunLoopThread 线程单例中创建的 RunLoop
     return [SRRunLoopThread sharedThread].runLoop;
 }
 

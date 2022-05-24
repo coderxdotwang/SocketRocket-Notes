@@ -47,6 +47,10 @@
     return self;
 }
 
+/**
+ override 复写 NSThread `main` 方法：不需要调用对应的 `super` 方法。
+ 且不能直接调用 `main` 方法，而是通过 `start` 方法启动线程。
+*/
 - (void)main
 {
     @autoreleasepool {

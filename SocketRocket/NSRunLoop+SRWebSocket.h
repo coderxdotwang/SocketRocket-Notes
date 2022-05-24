@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Default run loop that will be used to schedule all instances of `SRWebSocket`.
+ 用于调度所有`SRWebSocket` 实例的默认 RunLoop。
 
  @return An instance of `NSRunLoop`.
  */
